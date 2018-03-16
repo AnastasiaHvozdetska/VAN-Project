@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".slider").slick({dots:!0,arrows:!1,slidesToShow:3,slidesToScroll:3,autoplay:!0,autoplaySpeed:2e3})});
+$(document).ready(function(){$(".slider").slick({dots:!0,arrows:!1,slidesToShow:3,slidesToScroll:3,autoplay:!0,autoplaySpeed:2e3}),$("#phone-number").mask("(999) 999-9999")});
