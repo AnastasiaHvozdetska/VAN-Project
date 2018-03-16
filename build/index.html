@@ -44,7 +44,7 @@
 		<polygon class="cls-1" points="226.05 200.3 220.35 246.91 182.84 218.67 226.05 200.3" fill="#edf3f3" style="fill: var(--secondary-color)"/><path class="cls-2" d="M287.4,0A423.49,423.49,0,0,0,0,119L122.18,241.2A251.27,251.27,0,0,1,287.4,172.8Z" fill="#f6f8fa" style="fill: var(--primary-color)"/>
 		<path class="cls-1" d="M287.4,208.43V172.8a251.27,251.27,0,0,0-165.22,68.4l25.19,25.19A215.77,215.77,0,0,1,287.4,208.43Z" fill="#edf3f3" style="fill: var(--secondary-color)"/>
 		</symbol>
-	</svg>
+	</svg> 
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-inverse navbar-expand-md">
@@ -57,13 +57,13 @@
 				<div class="collapse navbar-collapse" id="navbar-menu">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a href="#" class="nav-link menu-link text-uppercase">Личный кабинет</a>
+							<a href="#" class="nav-link menu-link text-uppercase" id="account">Личный кабинет</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link menu-link text-uppercase">Главная</a>
+							<a href="index.html" class="nav-link menu-link text-uppercase">Главная</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link menu-link text-uppercase">Программы питания</a>
+							<a href="programs.html" class="nav-link menu-link text-uppercase">Программы питания</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link menu-link text-uppercase">О нас</a>
@@ -93,9 +93,10 @@
 			</nav>
 		</div>
 	</header>
-		<main>
-			<section class="main d-flex justify-content-center align-content-center">
-					<div class="row">
+	<main>
+		<section class="main d-flex justify-content-center align-content-center">
+			<div class="container">
+				<div class="row">
 					<div class="col-lg-5 col-xs-1 main-content">
 						<h1 class="text-uppercase">Да</h1>
 						<p class="text-uppercase">Теперь можно питаться вкусно и правильно. Ведь теперь есть VAN!</p>
@@ -103,285 +104,286 @@
 						<a href="#" class="btn btn-choose text-uppercase">Выбрать программу</a>
 					</div>
 				</div>
-			</section>	
-			<section class="program">
-				<div class="container">
-					<div class="row">
-						<div class="col-3">
-							<h3 class="display-4 text-uppercase">Программы питания</h3>
-							<p class="text-uppercase">На любой вкус для любых целей</p>
-						</div>
-						<div class="col">
-							<div class="circle-wrapper">
-								<div class="circle">
-									<img src="img/girl.png" alt="" class="img-fluid circle-girl">
-									<a href="#" class="circle-link" id="link-1">
-										<span>Индивидуальная</span>
-											<svg class="segment" id="segment1" overflow="visible">
-											<use xlink:href="#segment"></use>
-										</svg>
-									</a>
-									<a href="#" class="circle-link" id="link-2">
-										<span>Сбалансированное питание</span>
-										<svg class="segment" id="segment2">
-											<use xlink:href="#segment"></use>
-										</svg>
-									</a>
-									<a href="#" class="circle-link" id="link-3">
-										<span>Общее похудение</span>
-										<svg class="segment" id="segment3">
+			</div>
+		</section>
+		<section class="program">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<h3 class="display-4 text-uppercase">Программы питания</h3>
+						<p class="text-uppercase">На любой вкус для любых целей</p>
+					</div>
+					<div class="col">
+						<div class="circle-wrapper">
+							<div class="circle">
+								<img src="./img/girl.png" alt="" class="img-fluid circle-girl">
+								<a href="#" class="circle-link" id="link-1">
+									<span>Индивидуальная</span>
+										<svg class="segment" id="segment1" overflow="visible">
 										<use xlink:href="#segment"></use>
 									</svg>
-									</a>
-									<a href="#" class="circle-link" id="link-4">
-										<span>Антицеллюлитная</span>
-										<svg class="segment" id="segment4">
+								</a>
+								<a href="#" class="circle-link" id="link-2">
+									<span>Сбалансированное питание</span>
+									<svg class="segment" id="segment2">
 										<use xlink:href="#segment"></use>
 									</svg>
-									</a>
-									<a href="#" class="circle-link" id="link-5">
-										<span>При гормональном сбое</span>
-										<svg class="segment" id="segment5">
-											<use xlink:href="#segment"></use>
-										</svg>
-									</a>
-									<a href="#" class="circle-link" id="link-6">
-										<span>Набор веса</span>
-										<svg class="segment" id="segment6">
-											<use xlink:href="#segment"></use>
-										</svg>
-									</a>
-									<a href="#" class="circle-link" id="link-7">
-										<span>Вегетарианская</span>
-										<svg class="segment" id="segment7">
-											<use xlink:href="#segment"></use>
-										</svg>
-									</a>
-									<a href="#" class="circle-link" id="link-8">
-										<span>Для беременных и кормящих</span>
-										<svg class="segment" id="segment8">
-											<use xlink:href="#segment"></use>
-										</svg>
-									</a>
-								</div>
+								</a>
+								<a href="#" class="circle-link" id="link-3">
+									<span>Общее похудение</span>
+									<svg class="segment" id="segment3">
+									<use xlink:href="#segment"></use>
+								</svg>
+								</a>
+								<a href="#" class="circle-link" id="link-4">
+									<span>Антицеллюлитная</span>
+									<svg class="segment" id="segment4">
+									<use xlink:href="#segment"></use>
+								</svg>
+								</a>
+								<a href="#" class="circle-link" id="link-5">
+									<span>При гормональном сбое</span>
+									<svg class="segment" id="segment5">
+										<use xlink:href="#segment"></use>
+									</svg>
+								</a>
+								<a href="#" class="circle-link" id="link-6">
+									<span>Набор веса</span>
+									<svg class="segment" id="segment6">
+										<use xlink:href="#segment"></use>
+									</svg>
+								</a>
+								<a href="#" class="circle-link" id="link-7">
+									<span>Вегетарианская</span>
+									<svg class="segment" id="segment7">
+										<use xlink:href="#segment"></use>
+									</svg>
+								</a>
+								<a href="#" class="circle-link" id="link-8">
+									<span>Для беременных и кормящих</span>
+									<svg class="segment" id="segment8">
+										<use xlink:href="#segment"></use>
+									</svg>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="influence">
-				<div class="container">
-					<h3 class="display-4 text-uppercase title influence-title">Правильное питание влияет на:</h3>
-					<div class="row icons justify-content-center">
-						<div class="col-lg-3 col-md-4 col-6">
-							<div class="icons-icon">
-								<img src="svg/icon1.svg" alt="" class="img-fluid">
-								<div class="icons-icon__text">Самочуствие и настроение</div>
-							</div>
-							<div class="icons-icon">
-								<img src="svg/icon2.svg" alt="" class="img-fluid">
-								<div class="icons-icon__text">Состояние кожи, волос и ногтей</div>
+			</div>
+		</section>
+		<section class="influence">
+			<div class="container">
+				<h3 class="display-4 text-uppercase title influence-title">Правильное питание влияет на:</h3>
+				<div class="row icons justify-content-center">
+					<div class="col-lg-3 col-md-4 col-6">
+						<div class="icons-icon">
+							<img src="svg/icon1.svg" alt="" class="img-fluid">
+							<div class="icons-icon__text">Самочуствие и настроение</div>
+						</div>
+						<div class="icons-icon">
+							<img src="svg/icon2.svg" alt="" class="img-fluid">
+							<div class="icons-icon__text">Состояние кожи, волос и ногтей</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6">
+						<div class="icons-icon">
+							<img src="svg/icon3.svg" alt="" class="img-fluid">
+							<div class="icons-icon__text" style="color:#ff8203">Физическую активность</div>
+						</div>
+						<div class="icons-icon">
+							<img src="svg/icon4.svg" alt="" class="img-fluid">
+							<div class="icons-icon__text">Состояние зубов и костей</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6">
+						<div class="icons-icon">
+							<img src="svg/icon5.svg" alt="" class="img-fluid">
+							<div class="icons-icon__text">Мышление и память</div>
+						</div>
+						<div class="icons-icon">
+							<img src="svg/icon6.svg" alt="" class="img-fluid">
+							<div class="icons-icon__text">Здоровье и иммунитет</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6">
+						<div class="icons-icon">
+							<img src="svg/icon7.svg" alt="" class="img-fluid">
+							<div class="icons-icon__text">Качество сна</div>
+						</div>
+						<div class="icons-icon">
+							<img src="svg/icon8.svg" alt="" class="img-fluid">
+							<div class="icons-icon__text">Фигуру</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="choose">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-3 col-xs-3">
+						<h4 class="text-uppercase">Шаг<span class="hash">#</span>1</h4>
+						<span>Выбрать программу</span>
+					</div>
+					<div class="col-lg-3 col-xs-3 text-right">
+						<h4 class="text-uppercase">Шаг<span class="hash">#</span>2</h4>
+						<span>Быть здоровым</span>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-6"><a href="#" class="btn btn-choose text-uppercase">Выбрать программу</a></div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews">
+			<div class="container">
+				<h3 class="text-uppercase reviews-title">Отзывы</h3>
+				<div class="slider-wrapper">
+					<div class="slider">
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Ольга Борец</span>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-6">
-							<div class="icons-icon">
-								<img src="svg/icon3.svg" alt="" class="img-fluid">
-								<div class="icons-icon__text" style="color:#ff8203">Физическую активность</div>
-							</div>
-							<div class="icons-icon">
-								<img src="svg/icon4.svg" alt="" class="img-fluid">
-								<div class="icons-icon__text">Состояние зубов и костей</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-6">
-							<div class="icons-icon">
-								<img src="svg/icon5.svg" alt="" class="img-fluid">
-								<div class="icons-icon__text">Мышление и память</div>
-							</div>
-							<div class="icons-icon">
-								<img src="svg/icon6.svg" alt="" class="img-fluid">
-								<div class="icons-icon__text">Здоровье и иммунитет</div>
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Наталья Рох</span>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-6">
-							<div class="icons-icon">
-								<img src="svg/icon7.svg" alt="" class="img-fluid">
-								<div class="icons-icon__text">Качество сна</div>
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Наталья Кот</span>
 							</div>
-							<div class="icons-icon">
-								<img src="svg/icon8.svg" alt="" class="img-fluid">
-								<div class="icons-icon__text">Фигуру</div>
+						</div>
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Ольга Борец</span>
+							</div>
+						</div>
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Ольга Борец</span>
+							</div>
+						</div>
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Ольга Борец</span>
+							</div>
+						</div>
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Ольга Борец</span>
+							</div>
+						</div>
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Ольга Борец</span>
+							</div>
+						</div>
+						<div class="slider-item">
+							<span class="quotes">“</span>
+							<div class="slider-item-review">
+								<p>
+									Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
+								</p>
+								<span class="name">Ольга Борец</span>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="choose">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-3 col-xs-3">
-							<h4 class="text-uppercase">Шаг<span class="hash">#</span>1</h4>
-							<span>Выбрать программу</span>
+			</div>
+		</section>
+		<section class="reasons">
+			<div class="container">
+				<h3 class="text-uppercase title reasons-title">Почему стоит довериться нам:</h3>
+				<div class="row">
+					<div class="col-4">
+						<div class="card card-1">
+							<h3 class="card-header text-uppercase">
+								<img src="svg/comfort.svg" alt="" class="card-icon">Комфорт</h3>
+							<div class="card-body">
+								<p class="card-text">
+									Мы составим программу питания под нужды каждого потребителя. Вам не нужно будет каждый день искать рецепты и вести подсчет жиров, белков, углеводов и всех необходимых микроэлементов. Мы будем напоминать Вам о времени приготовлении пищи и тренировках. Вы сможете связаться с личным диетологом в удобное время и получить ответы на любые вопросы.
+								</p>
+							</div>
 						</div>
-						<div class="col-lg-3 col-xs-3 text-right">
-							<h4 class="text-uppercase">Шаг<span class="hash">#</span>2</h4>
-							<span>Быть здоровым</span>
+						<div class="card card-4">
+							<h3 class="card-header text-uppercase">
+								<img src="svg/online-icon.svg" alt="" class="card-icon">Онлайн</h3>
+							<div class="card-body">
+								<p class="card-text">
+									Вам не нужно постоянно ездить на консультацию к Вашему диетологу. Ведь мы будем всегда рядом у Вас в смартфоне. В личном кабинете за Вами будет закреплен личный диетолог, связь с которым будет доступна 24/7.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="row justify-content-center">
-						<div class="col-6"><a href="#" class="btn btn-choose text-uppercase">Выбрать программу</a></div>
+					<div class="col-4">
+						<div class="card card-2">
+							<h3 class="card-header text-uppercase">
+								<img src="svg/price-icon.svg" alt="" class="card-icon">Цена</h3>
+							<div class="card-body">
+								<p class="card-text">
+									Стоимость программы ниже, чем если бы Вы обращались за услугами отдельно к диетологу и отдельно к тренеру. Более того, поддержка диетолога присутствует во все время длительности программы и нет нужды каждый раз платить за консультации.
+								</p>
+							</div>
+						</div>
+						<div class="card card-5">
+							<h3 class="card-header text-uppercase">
+								<img src="svg/voice.svg" alt="" class="card-icon">Информация</h3>
+							<div class="card-body">
+								<p class="card-text">
+									Мы постоянно проводим семинары и тренинги в области здорового питания, ведь очень хотим чтоб наша нация была сильной, крепкой и здоровой!
+								</p>
+							</div>
+						</div>
 					</div>
-				</div>
-			</section>
-			<section class="reviews">
-				<div class="container">
-					<h3 class="text-uppercase reviews-title">Отзывы</h3>
-					<div class="slider-wrapper">
-						<div class="slider">
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Ольга Борец</span>
-								</div>
-							</div>
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Наталья Рох</span>
-								</div>
-							</div>
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Наталья Кот</span>
-								</div>
-							</div>
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Ольга Борец</span>
-								</div>
-							</div>
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Ольга Борец</span>
-								</div>
-							</div>
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Ольга Борец</span>
-								</div>
-							</div>
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Ольга Борец</span>
-								</div>
-							</div>
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Ольга Борец</span>
-								</div>
-							</div>
-							<div class="slider-item">
-								<span class="quotes">“</span>
-								<div class="slider-item-review">
-									<p>
-										Это рацион для похудения, красивых форм или прорисовки рельефа. Наши планы питания помогают не срываться...
-									</p>
-									<span class="name">Ольга Борец</span>
-								</div>
+					<div class="col-4">
+						<div class="card card-3">
+							<h3 class="card-header text-uppercase">
+								<img src="svg/support-icon.svg" alt="" class="card-icon">Поддержка</h3>
+							<div class="card-body">
+								<p class="card-text">
+									Мы знаем, как важно, чтоб во время смены привычек, нас кто-то поддержал. Поэтому Вы всегда сможете написать диетологу- психологу и получить квалифицированный совет.
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="reasons">
-				<div class="container">
-					<h3 class="text-uppercase title reasons-title">Почему стоит довериться нам:</h3>
-					<div class="row">
-						<div class="col-4">
-							<div class="card card-1">
-								<h3 class="card-header text-uppercase">
-									<img src="svg/comfort.svg" alt="" class="card-icon">Комфорт</h3>
-								<div class="card-body">
-									<p class="card-text">
-										Мы составим программу питания под нужды каждого потребителя. Вам не нужно будет каждый день искать рецепты и вести подсчет жиров, белков, углеводов и всех необходимых микроэлементов. Мы будем напоминать Вам о времени приготовлении пищи и тренировках. Вы сможете связаться с личным диетологом в удобное время и получить ответы на любые вопросы.
-									</p>
-								</div>
-							</div>
-							<div class="card card-4">
-								<h3 class="card-header text-uppercase">
-									<img src="svg/online-icon.svg" alt="" class="card-icon">Онлайн</h3>
-								<div class="card-body">
-									<p class="card-text">
-										Вам не нужно постоянно ездить на консультацию к Вашему диетологу. Ведь мы будем всегда рядом у Вас в смартфоне. В личном кабинете за Вами будет закреплен личный диетолог, связь с которым будет доступна 24/7.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="card card-2">
-								<h3 class="card-header text-uppercase">
-									<img src="svg/price-icon.svg" alt="" class="card-icon">Цена</h3>
-								<div class="card-body">
-									<p class="card-text">
-										Стоимость программы ниже, чем если бы Вы обращались за услугами отдельно к диетологу и отдельно к тренеру. Более того, поддержка диетолога присутствует во все время длительности программы и нет нужды каждый раз платить за консультации.
-									</p>
-								</div>
-							</div>
-							<div class="card card-5">
-								<h3 class="card-header text-uppercase">
-									<img src="svg/voice.svg" alt="" class="card-icon">Информация</h3>
-								<div class="card-body">
-									<p class="card-text">
-										Мы постоянно проводим семинары и тренинги в области здорового питания, ведь очень хотим чтоб наша нация была сильной, крепкой и здоровой!
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="card card-3">
-								<h3 class="card-header text-uppercase">
-									<img src="svg/support-icon.svg" alt="" class="card-icon">Поддержка</h3>
-								<div class="card-body">
-									<p class="card-text">
-										Мы знаем, как важно, чтоб во время смены привычек, нас кто-то поддержал. Поэтому Вы всегда сможете написать диетологу- психологу и получить квалифицированный совет.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+			</div>
+		</section>
+	</main>
 	<div class="footer">
 		<div class="container">
 			<div class="row">
@@ -449,11 +451,11 @@
 		</div>
 	</div>
 
-	
+
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="js/slick.min.js"></script>		
-	<script type="text/javascript" src="js/main.js"></script>		
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
