@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".slider").slick({dots:!0,arrows:!1,slidesToShow:3,slidesToScroll:3,autoplay:!0,autoplaySpeed:2e3}),$("#phone-number").mask("(999) 999-9999")});
+$(document).ready(function(){$(".slider").slick({dots:!0,arrows:!1,slidesToShow:3,slidesToScroll:3,autoplay:!0,autoplaySpeed:2e3}),$("#phone-number").mask("(999) 999-9999",{placeholder:"_"}),$(".checkbox").on("click",function(){$(".checkbox").css("background-color","#303030"),$(this).css("background-color","#ff8303"),$("label").css("color","#fff"),$(this).find("label").css("color","#303030")})});

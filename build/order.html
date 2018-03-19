@@ -3,15 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Balance</title>
+	<title>Order</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-</head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"> </head>
 
 <body>
 	<header>
@@ -62,93 +59,59 @@
 			</nav>
 		</div>
 	</header>
-	<main class="balance-content">
+	<main class="order-content">
 		<div class="container">
-			<img src="./img/cereal.png" alt="">
-			<div class="balance-info">
-				<h3 class="text-uppercase display-4">Сбалансированое питание</h3>
-				<p>
-					Сбалансированное питание – это поступление в организм необходимых ему питательных веществ: белков, жиров, углеводов, витаминов, минералов и микроэлементов.
-				</p>
-				<p>
-					Если Вы хотите ощущать бодрость, активность, иметь высокие показатели мозговой деятельности, наполнить свой организм энергией и здоровьем, то правильное питание - это самый важный и главный первый шаг! Ведь все мы знаем пословицу: “Мы то, что мы едим”. Эта программа содержит сбалансированный и разнообразный рацион, содержащий суточную норму витаминов и минералов.
-				</p>
-				<ul> Что входит в данный пакет:
-					<li>
-						Сбалансированная программа питания
-					</li>
-					<li>
-						Программа домашних тренировок (для женщин)
-					</li>
-					<li>
-						Видео инструкция по выполнению упражнений
-					</li>
-					<li>
-						Список рекомендаций
-					</li>
-					<li>
-						Круглосуточный чат с личным диетологом на весь период программы
-					</li>
-				</ul>
+			<h1 class="text-uppercase display-4">Ваш заказ</h1>
+			<div class="row order-price">
+				<div class="col order-name"> <img src="./img/cheese.png" alt="">
+					<h3 class="text-uppercase">Сбалансированное питание</h3>
+				</div>
+				<div class="col order-pay">
+					<p>Сумма к оплате:</p>
+					<p id="price">1000 <span>грн</span></p>
+				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
-			<div class="balance-reasons">
-				<div class="container">
-					<div class="row">
-						<div class="col reason-case">
-							<h2 class="text-uppercase">Эта программа для вас, эсли:</h2>
+			<div class="form-content">
+				<form action="">
+					<div class="form-info">
+						<div class="form-group">
+							<label for="name"></label>
+							<input type="text" id="name" placeholder="Введите имя и фамилию">
+						</div>
+						<div class="form-group">
+							<label for="name"></label>
+							<input type="email" id="name" placeholder="Введите e-mail">
+						</div>
+						<div class="form-group country-code-wrapper">
+							<label for="country-code"></label> <select id="country-code" class="form-control" data-style="btn-primary"> 		<option>+38</option>
+							<option>+7</option>
+							<option>+375</option>
+						</select>
+						</div>
+						<div class="form-group phone-number-wrapper">
+							<label for="phone-number"></label>
+							<input type="text" id="phone-number">
 						</div>
 					</div>
-					<div class="row">
-						<div class="col reason-case">
-							<span>
-								#1
-							</span>
-							<p>
-								Вы хотите иметь сбаланси рованный и разнообразный рацион
-
-							</p>
+					<h3 class="display-4 text-uppercase text-center">Выберите удобный способ оплаты</h3>
+					<div class="form-card">
+						<div class="checkbox" style="background-image: url(img/card.png)">
+							<label for="card"> Картой Viza / Mastercard</label>
+							<input type="radio" id="card" name="radio" class="type" value="card">
 						</div>
-						<div class="col reason-case">
-							<span>
-								#2
-							</span>
-							<p>
-								Вы ведете или хотите начать вести здоровый образ жизни
-							</p>
+						<div class="checkbox" style="background-image: url(img/privat.png)">
+							<label for="privat24">Приват 24</label>
+							<input type="radio" id="privat24" name="radio" class="type" value="privat24">
 						</div>
-						<div class="col reason-case">
-							<span>
-								#3
-							</span>
-							<p>
-								Вы заботитесь о своем здоровье и о своем будущем
-							</p>
-						</div>
-						<div class="col reason-case">
-							<span>
-								#4
-							</span>
-							<p>
-								Вы не имеете серьезных заболеваний или противопоказаний по здоровью
-							</p>
+						<div class="checkbox" style="background-image: url(img/cash.png)">
+							<label for="cash">Наличными (через кассу или терминал)</label>
+							<input type="radio" id="cash" name="radio" class="type" value="cash">
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="balance-order">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-7 order-content">
-							<h2 class="text-uppercase display-4">Школа питания VAN</h2>
-							<h3 class="text-uppercase">
-								Легкий путь к правильному весу
-							</h3>
-							<a href="order.html" class="btn-order">Заказать программу</a>
-						</div>
-					</div>
-				</div>
+					<a href="" class="btn-order">Заказать программу</a>
+				</form>
 			</div>
 		</div>
 	</main>
@@ -218,6 +181,9 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </body>
 
 </html>
