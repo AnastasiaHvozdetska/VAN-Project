@@ -3,14 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>VAN</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 
-	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+<!--	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">-->
 </head>
 
 <body>
@@ -57,7 +57,7 @@
 				<div class="collapse navbar-collapse" id="navbar-menu">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a href="#" class="nav-link menu-link text-uppercase" id="account">Личный кабинет</a>
+							<a href="#" class="nav-link menu-link text-uppercase" id="account" data-toggle="modal" data-target="#exampleModal3">Личный кабинет</a>
 						</li>
 						<li class="nav-item">
 							<a href="index.html" class="nav-link menu-link text-uppercase">Главная</a>
@@ -93,6 +93,43 @@
 			</nav>
 		</div>
 	</header>
+	<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+					
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	
+				<div class="modal-body">
+					<div class="row">
+						<div class="col">
+						<h5 class="modal-title text-uppercase" id="exampleModal3Label">Вход в личный кабинет</h5>
+							<form action="">
+								<div class="form-group">
+									<label for="name"></label>
+									<input type="text" id="name" placeholder="Логин">
+								</div>
+								<div class="form-group">
+									<label for="password"></label>
+									<input type='password' id="password" placeholder="Пароль">
+								</div>
+								<div class="form-group">
+									<label for="rememberme">Запомнить меня</label>
+									<input type='checkbox' id="rememberme" placeholder="Запомнить меня">
+								</div>
+								<a href="#">Я не помню свой пароль</a>
+								<a href="#" id="enter">Войти</a>
+							</form>
+						</div>
+						<div class="col">
+							<img src="./img/modal-img.jpg" alt="" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<main>
 		<section class="main d-flex justify-content-center align-content-center" style="background-image: url(img/bg2.jpg)">
 			<div class="container">
@@ -452,10 +489,8 @@
 	</div>
 
 
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </body>
 
 </html>
