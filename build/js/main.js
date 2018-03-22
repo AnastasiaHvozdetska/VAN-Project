@@ -9,10 +9,6 @@ $(document).ready(function () {
 		autoplaySpeed: 2000,
 	});
 
-	$('#phone-number').mask('(999) 999-9999', {
-		placeholder: "_"
-	});
-
 	$('.checkbox').on('click', function () {
 		$('.checkbox').css('background-color', '#303030');
 		$(this).css('background-color', '#ff8303');
@@ -23,5 +19,10 @@ $(document).ready(function () {
 	$('.case').on('click', function () {
 		$(this).parent().next('.btn-group-step').show();
 	});
-
+	
+	$(function(){
+		var heightMenu = $('.account-content').height();
+		$('.left-menu-wrapper').height(heightMenu);
+	});
+	
 });
