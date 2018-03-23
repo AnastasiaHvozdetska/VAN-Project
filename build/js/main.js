@@ -16,13 +16,19 @@ $(document).ready(function () {
 		$(this).find('label').css('color', '#303030');
 	});
 
-	$('.case').on('click', function () {
-		$(this).parent().next('.btn-group-step').show();
-	});
+//	$('.case').on('click', function () {
+//		$(this).parent().next('.btn-group-step').show();
+//	});
 	
 	$(function(){
 		var heightMenu = $('.account-content').height();
 		$('.left-menu-wrapper').height(heightMenu);
 	});
 	
+	$(function(){
+		var url = document.location.toString();
+		$('.left-menu-link').filter(function(){
+			return url.indexOf(this.href) != -1;
+		}).addClass('.current-link');
+	});
 });

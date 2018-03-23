@@ -43,6 +43,12 @@ $(document).ready(function () {
 		$('.left-menu-wrapper').height(heightMenu);
 	});
 	
+	$(function(){
+		var url = document.location.toString();
+		$('.left-menu-link').filter(function(){
+			return url.indexOf(this.href) != -1;
+		}).addClass('.active');
+	});
 });
 
 	
