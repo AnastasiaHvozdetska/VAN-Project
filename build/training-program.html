@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<title>Personal Account</title>
+	<title>Training</title>
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-
+	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-
 </head>
-
 <body>
-	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
 		<symbol id="facebook" viewBox="0 0 512 512">
 			<path class="st0" d="M437,75C388.7,26.6,324.4,0,256,0c-68,0-133,26.9-181,75C26.6,123.3,0,187.6,0,256
 			c0,53.3,16.2,104.4,46.9,147.8c30,42.4,71.5,74.3,120,92.3c3.3,1.2,7,0.2,9.3-2.7c1.1-1.5,1.6-3.3,1.6-5.1v-146
@@ -104,61 +101,176 @@
 						</nav>
 					</div>
 				</header>
-				<div class="container account-main-content">
-					<h1 class="display-4 text-uppercase">Мой профиль</h1>
-					<div class="account-info">
-						<div class="account-image-wrapper">
-							<div class="account-image">
-								<img src="./img/account-img.png" alt="">
-								<label for="file" style="background-image: url(img/img-download.png)"><input type="file" id="file" name="file" multiple></label>
-							</div>
-						</div>
-						<div class="account-data">
-							<p><span>Имя: </span>Ксения Николаевна Иванова</p>
-							<p><span>Программа: </span>Вегетерианская</p>
-							<p>
-								<span>Активна до: </span>29.12.2018
-								<a href="#" id="account-continue">Продлить</a>
-							</p>
-						</div>
-					</div>
-					<div class="account-action-wrapper">
-						<div class="row">
-							<div class="col">
-								<a href="" class="action-program-link"><img src="./img/program.jpg" alt="" class="img-fluid">
-								<span>
-									Программа питания
-								</span>
-								</a>
-							</div>
-							<div class="col">
-								<a href="" class="action-program-link"><img src="./img/training.jpg" alt="" class="img-fluid">
-								<span>
-									Программа питания
-								</span>
-								</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col nutritionist-wrapper" style="background-image: url(img/nutri-bg.jpg)">
-								<div class="photo-nutritionist-wrapper">
-										<div class="photo-nutritionist-wrapper">
-									<div class="photo-nutritionist-wrapper orange">
-										<img src="./img/nutritionist.png" alt="" id="nutritionist">
+				<div class="container account-training-content">
+					<h3 class="text-uppercase">Рекомендованное меню</h3>
+						<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab" class="week active show">Неделя 1</a>
+							</li>
+							<li><a href="#tab2" data-toggle="tab" class="week">Неделя 2</a>
+							</li>
+							<li><a href="#tab3" data-toggle="tab" class="week">Неделя 3</a>
+							</li>
+							<li><a href="#tab4" data-toggle="tab" class="week">Неделя 4</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<div class="span8">
+									<div class="tabbable tabs-left">
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#tab5" data-toggle="tab" class="active show">Понедельник</a></li>
+											<li><a href="#tab6" data-toggle="tab">Вторник</a></li>
+											<li><a href="#tab7" data-toggle="tab">Среда</a></li>
+											<li><a href="#tab8" data-toggle="tab">Четверг</a></li>
+											<li><a href="#tab9" data-toggle="tab">Пятница</a></li>
+											<li><a href="#tab10" data-toggle="tab">Субота</a></li>
+											<li><a href="#tab11" data-toggle="tab">Воскресенье</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="tab5">
+												
+											</div>
+											<div class="tab-pane" id="tab6">
+												<p>Вторник 1</p>
+											</div>
+											<div class="tab-pane" id="tab7">
+												<p>Среда 1</p>
+											</div>
+											<div class="tab-pane" id="tab8">
+												<p>Четверг 1</p>
+											</div>
+											<div class="tab-pane" id="tab9">
+												<p>Пятница 1</p>
+											</div>
+											<div class="tab-pane" id="tab10">
+												<p>Субота 1</p>
+											</div>
+											<div class="tab-pane" id="tab11">
+												<p>Воскресенье 1</p>
+											</div>
+										</div>
 									</div>
 								</div>
+							</div>
+							<div class="tab-pane" id="tab2">
+								<div class="span8">
+									<div class="tabbable tabs-left">
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#tab12" data-toggle="tab" class="active show">Понедельник</a></li>
+											<li><a href="#tab13" data-toggle="tab">Вторник</a></li>
+											<li><a href="#tab14" data-toggle="tab">Среда</a></li>
+											<li><a href="#tab15" data-toggle="tab">Четверг</a></li>
+											<li><a href="#tab16" data-toggle="tab">Пятница</a></li>
+											<li><a href="#tab17" data-toggle="tab">Субота</a></li>
+											<li><a href="#tab18" data-toggle="tab">Воскресенье</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="tab12">
+												<p>Понедельник 2</p>
+											</div>
+											<div class="tab-pane" id="tab13">
+												<p>Вторник 2</p>
+											</div>
+											<div class="tab-pane" id="tab14">
+												<p>Среда 3</p>
+											</div>
+											<div class="tab-pane" id="tab15">
+												<p>Четверг 4</p>
+											</div>
+											<div class="tab-pane" id="tab16">
+												<p>Пятница 5</p>
+											</div>
+											<div class="tab-pane" id="tab17">
+												<p>Субота 6</p>
+											</div>
+											<div class="tab-pane" id="tab18">
+												<p>Воскресенье 7</p>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="nutritionist-say">
-									<p>Здраствуйте, я <span>Анна</span>, Ваш диетолог</p>
-								<a href="#" id="chat-link" class="text-uppercase">Перейти в чат</a>
+							</div>
+							<div class="tab-pane" id="tab3">
+								<div class="span8">
+									<div class="tabbable tabs-left">
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#tab19" data-toggle="tab" class="active show">Понедельник</a></li>
+											<li><a href="#tab20" data-toggle="tab">Вторник</a></li>
+											<li><a href="#tab21" data-toggle="tab">Среда</a></li>
+											<li><a href="#tab22" data-toggle="tab">Четверг</a></li>
+											<li><a href="#tab23" data-toggle="tab">Пятница</a></li>
+											<li><a href="#tab24" data-toggle="tab">Субота</a></li>
+											<li><a href="#tab25" data-toggle="tab">Воскресенье</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="tab19">
+												<p>Понедельник 3</p>
+											</div>
+											<div class="tab-pane" id="tab20">
+												<p>Вторник 3</p>
+											</div>
+											<div class="tab-pane" id="tab21">
+												<p>Среда 3</p>
+											</div>
+											<div class="tab-pane" id="tab22">
+												<p>Четверг 3</p>
+											</div>
+											<div class="tab-pane" id="tab23">
+												<p>Пятница 3</p>
+											</div>
+											<div class="tab-pane" id="tab24">
+												<p>Субота 3</p>
+											</div>
+											<div class="tab-pane" id="tab25">
+												<p>Воскресенье 3</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="tab4">
+								<div class="span8">
+									<div class="tabbable tabs-left">
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#tab26" data-toggle="tab" class="active show">Понедельник</a></li>
+											<li><a href="#tab27" data-toggle="tab">Вторник</a></li>
+											<li><a href="#tab28" data-toggle="tab">Среда</a></li>
+											<li><a href="#tab29" data-toggle="tab">Четверг</a></li>
+											<li><a href="#tab30" data-toggle="tab">Пятница</a></li>
+											<li><a href="#tab31" data-toggle="tab">Субота</a></li>
+											<li><a href="#tab32" data-toggle="tab">Воскресенье</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="tab26">
+												<p>Понедельник 4</p>
+											</div>
+											<div class="tab-pane" id="tab27">
+												<p>Вторник 4</p>
+											</div>
+											<div class="tab-pane" id="tab28">
+												<p>Среда 4</p>
+											</div>
+											<div class="tab-pane" id="tab29">
+												<p>Четверг 4</p>
+											</div>
+											<div class="tab-pane" id="tab30">
+												<p>Пятница 4</p>
+											</div>
+											<div class="tab-pane" id="tab31">
+												<p>Субота 4</p>
+											</div>
+											<div class="tab-pane" id="tab32">
+												<p>Воскресенье 4</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
 			</div>
-			
 		</div>
 		<div class="footer" style="background-image: url(img/bg-footer.jpg)">
 			<div class="container">
@@ -227,9 +339,7 @@
 			</div>
 		</div>
 	</main>
-	
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/libs.js"></script>
 </body>
-
 </html>
