@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Training</title>
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+	<link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
 </head>
+
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
 		<symbol id="facebook" viewBox="0 0 512 512">
 			<path class="st0" d="M437,75C388.7,26.6,324.4,0,256,0c-68,0-133,26.9-181,75C26.6,123.3,0,187.6,0,256
 			c0,53.3,16.2,104.4,46.9,147.8c30,42.4,71.5,74.3,120,92.3c3.3,1.2,7,0.2,9.3-2.7c1.1-1.5,1.6-3.3,1.6-5.1v-146
@@ -39,6 +42,16 @@
 		<symbol id="segment" viewBox="0 0 287.4 266.39">
 		<polygon class="cls-1" points="226.05 200.3 220.35 246.91 182.84 218.67 226.05 200.3" fill="#edf3f3" style="fill: var(--secondary-color)"/><path class="cls-2" d="M287.4,0A423.49,423.49,0,0,0,0,119L122.18,241.2A251.27,251.27,0,0,1,287.4,172.8Z" fill="#f6f8fa" style="fill: var(--primary-color)"/>
 		<path class="cls-1" d="M287.4,208.43V172.8a251.27,251.27,0,0,0-165.22,68.4l25.19,25.19A215.77,215.77,0,0,1,287.4,208.43Z" fill="#edf3f3" style="fill: var(--secondary-color)"/>
+		</symbol>
+		<symbol id="play" viewBox="0 0 487.6 487.6">
+				<style type="text/css">
+			.st0{fill:#303030;}
+			.st1{fill:#272728;}
+			.st2{fill:#FFFFFF;}
+		</style>
+			<circle class="st0" cx="243.8" cy="243.8" r="243.8"/>
+			<path class="st1" d="M483.4,289L176.7,101.5l-26,300.4l109.4,85.2C372,479.7,463.2,396.8,483.4,289z"/>
+			<path class="st2" d="M150.7,401.9V85.8l261.8,158L150.7,401.9z M188.7,153.1v181.4l150.3-90.7L188.7,153.1z"/>
 		</symbol>
 	</svg>
 	<main class="account-wrapper">
@@ -103,7 +116,7 @@
 				</header>
 				<div class="container account-training-content">
 					<h3 class="text-uppercase">Рекомендованное меню</h3>
-						<div class="tabbable">
+					<div class="tabbable">
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#tab1" data-toggle="tab" class="week active show">Неделя 1</a>
 							</li>
@@ -129,7 +142,122 @@
 										</ul>
 										<div class="tab-content">
 											<div class="tab-pane active" id="tab5">
-												<video src=""></video>
+												<div class="container">
+													<div class="video-wrapper">
+														<div href="#" class="video-link" data-toggle="modal" data-target="#video1">
+															<img src="./img/videoposter1.jpg" alt="" class="img-fluid">
+															<div class="video-hover">
+															</div>
+															<p>Название упражнения</p>
+															<img src="./svg/play.svg" alt="" class="button-play">
+														</div>
+														<div href="#" class="video-link" data-toggle="modal" data-target="#video2">
+															<img src="./img/videoposter1.jpg" alt="" class="img-fluid">
+															<div class="video-hover">
+															</div>
+															<p>Название упражнения</p>
+															<img src="./svg/play.svg" alt="" class="button-play">
+														</div>
+														<div href="#" class="video-link" data-toggle="modal" data-target="#video3">
+															<img src="./img/videoposter1.jpg" alt="" class="img-fluid">
+															<div class="video-hover">
+															</div>
+															<p>Название упражнения</p>
+															<img src="./svg/play.svg" alt="" class="button-play">
+														</div>
+														<div href="#" class="video-link" data-toggle="modal" data-target="#video4">
+															<img src="./img/videoposter1.jpg" alt="" class="img-fluid">
+															<div class="video-hover">
+															</div>
+															<p>Название упражнения</p>
+															<svg class="button-play">
+																<use xlink:href="#play"></use>
+															</svg>
+														</div>
+														<div href="#" class="video-link" data-toggle="modal" data-target="#video5">
+															<img src="./img/videoposter1.jpg" alt="" class="img-fluid">
+															<div class="video-hover">
+															</div>
+															<p>Название упражнения</p>
+															<img src="./svg/play.svg" alt="" class="button-play">
+														</div>
+														<div class="modal fade" id="video1" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" data-name="Some exercise">
+															<div class="modal-dialog modal-dialog-centered" role="document">
+																<div class="modal-content">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																	<div class="modal-body">
+																		<video class="video-js vjs-matrix" data-setup='{"controls": true, "autoplay": false}' width="1140px" poster="img/open-video.jpg">
+								  <source src="./video/Easy%20Warm%20Up%20Cardio%20Workout%20-%20Fitness%20Blender%20Warm%20Up%20Workout.mp4" type="video/mp4" />
+										 Your browser doesn't support HTML5 video tag.
+										</video>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="modal fade" id="video2" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+															<div class="modal-dialog modal-dialog-centered" role="document">
+																<div class="modal-content">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																	<div class="modal-body">
+																		<video class="video-js vjs-matrix" data-setup='{"controls": true, "autoplay": false}' width="1140px" poster="img/open-video.jpg">
+								  <source src="./video/Easy%20Warm%20Up%20Cardio%20Workout%20-%20Fitness%20Blender%20Warm%20Up%20Workout.mp4" type="video/mp4" />
+										 Your browser doesn't support HTML5 video tag.
+										</video>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="modal fade" id="video3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+															<div class="modal-dialog modal-dialog-centered" role="document">
+																<div class="modal-content">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																	<div class="modal-body">
+																		<video class="video-js vjs-matrix" data-setup='{"controls": true, "autoplay": false}' width="1140px" poster="img/open-video.jpg">
+								  <source src="./video/Easy%20Warm%20Up%20Cardio%20Workout%20-%20Fitness%20Blender%20Warm%20Up%20Workout.mp4" type="video/mp4" />
+										 Your browser doesn't support HTML5 video tag.
+										</video>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="modal fade" id="video4" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+															<div class="modal-dialog modal-dialog-centered" role="document">
+																<div class="modal-content">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																	<div class="modal-body">
+																		<video class="video-js vjs-matrix" data-setup='{"controls": true, "autoplay": false}' width="1140px" poster="img/open-video.jpg">
+								  <source src="./video/Easy%20Warm%20Up%20Cardio%20Workout%20-%20Fitness%20Blender%20Warm%20Up%20Workout.mp4" type="video/mp4" />
+										 Your browser doesn't support HTML5 video tag.
+										</video>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="modal fade" id="video5" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+															<div class="modal-dialog modal-dialog-centered" role="document">
+																<div class="modal-content">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																	<div class="modal-body">
+																		<video class="video-js vjs-matrix" data-setup='{"controls": true, "autoplay": false}' width="1140px" poster="img/open-video.jpg">
+								  <source src="./video/Easy%20Warm%20Up%20Cardio%20Workout%20-%20Fitness%20Blender%20Warm%20Up%20Workout.mp4" type="video/mp4" />
+										 Your browser doesn't support HTML5 video tag.
+										</video>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 											<div class="tab-pane" id="tab6">
 												<p>Вторник 1</p>
@@ -341,5 +469,41 @@
 	</main>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/libs.js"></script>
+	<script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+
+	<script>
+		videojs(document.querySelector('.video-js'));
+		$('body').on('hidden.bs.modal', '.modal', function() {
+			$('video').trigger('pause');
+		});
+		$(function() {
+			var videoName = document.createElement('p');
+			var buttonPrev = document.createElement('button');
+			var buttonAfter = document.createElement('button');
+			buttonPrev.classList.add('btnPrev');
+			buttonAfter.classList.add('btnAfter');
+			videoName.classList.add('video-name');
+			$('.vjs-control-bar:not(:first)').prepend(buttonPrev);
+			$('.vjs-play-control').after(buttonAfter);
+			$('.btnPrev').append('<img src="./svg/previous.svg" alt="" class="img-fluid">');
+			$('.btnAfter').append('<img src="./svg/next.svg" alt="" class="img-fluid">');
+		});
+
+
+		$(function() {
+			$('.btnAfter').on('click', function() {
+				$(this).closest('.modal').modal('hide');
+				$(this).closest('.modal').next().modal('show');
+			});
+			$('.btnPrev').on('click', function() {
+				$(this).closest('.modal').modal('hide');
+				$(this).closest('.modal').prev().modal('show');
+			});
+		});
+		
+
+	</script>
+
 </body>
+
 </html>
