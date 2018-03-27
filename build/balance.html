@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
 		<symbol id="facebook" viewBox="0 0 512 512">
 			<path class="st0" d="M437,75C388.7,26.6,324.4,0,256,0c-68,0-133,26.9-181,75C26.6,123.3,0,187.6,0,256
 			c0,53.3,16.2,104.4,46.9,147.8c30,42.4,71.5,74.3,120,92.3c3.3,1.2,7,0.2,9.3-2.7c1.1-1.5,1.6-3.3,1.6-5.1v-146
@@ -41,7 +41,7 @@
 		<polygon class="cls-1" points="226.05 200.3 220.35 246.91 182.84 218.67 226.05 200.3" fill="#edf3f3" style="fill: var(--secondary-color)"/><path class="cls-2" d="M287.4,0A423.49,423.49,0,0,0,0,119L122.18,241.2A251.27,251.27,0,0,1,287.4,172.8Z" fill="#f6f8fa" style="fill: var(--primary-color)"/>
 		<path class="cls-1" d="M287.4,208.43V172.8a251.27,251.27,0,0,0-165.22,68.4l25.19,25.19A215.77,215.77,0,0,1,287.4,208.43Z" fill="#edf3f3" style="fill: var(--secondary-color)"/>
 		</symbol>
-	</svg> 
+	</svg>
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-inverse navbar-expand-md">
@@ -147,9 +147,9 @@
 				<p>
 					Если Вы хотите ощущать бодрость, активность, иметь высокие показатели мозговой деятельности, наполнить свой организм энергией и здоровьем, то правильное питание - это самый важный и главный первый шаг! Ведь все мы знаем пословицу: “Мы то, что мы едим”. Эта программа содержит сбалансированный и разнообразный рацион, содержащий суточную норму витаминов и минералов.
 				</p>
-				
-				<ul> 
-				<p>Что входит в данный пакет:</p>
+
+				<ul>
+					<p>Что входит в данный пакет:</p>
 					<li>
 						Сбалансированная программа питания
 					</li>
@@ -261,6 +261,31 @@
 								</div>
 							</form>
 							<a href="order.html" class="btn-order">Заказать программу</a>
+							<form action="">
+								<div class="container">
+									<div class="form-info">
+										<div class="form-group">
+											<label for="name"></label>
+											<input type="text" id="name" placeholder="Введите имя и фамилию">
+										</div>
+										<div class="form-group">
+											<label for="name"></label>
+											<input type="email" id="email" placeholder="Введите e-mail">
+										</div>
+										<div class="form-group phone-number-wrapper">
+											<label for="country-code"></label>
+											<select id="country-code" class="form-control" data-style="btn-primary">
+												<option>+38</option>
+												<option>+7</option>
+												<option>+375</option>
+											</select>
+											<label for="phone-number"></label>
+											<input type="text" id="phone-number">
+										</div>
+										<button class="btn-order">Заказать программу</button>
+									</div>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -333,7 +358,7 @@
 			</div>
 		</div>
 	</div>
-		
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/libs.js"></script>
 

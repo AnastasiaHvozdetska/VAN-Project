@@ -3,13 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Personal Account</title>
+	<title>Chat</title>
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-
 </head>
 
 <body>
@@ -38,10 +37,6 @@
 			c-37.5-0.4-67.7-31.8-66.6-69.3c1.1-37.7,33.2-67.7,71.7-65.3c33.1,2.1,60.1,28.5,62.8,61.6c1.1,13.5-1.8,26.2-7.6,37.2
 			c-1.7,3.1-1.2,7,1.4,9.5c0,0,0.1,0.1,0.1,0.1c3.8,3.8,10.2,2.9,12.7-1.8C336.7,282.3,340.3,267.2,339.4,251.2z"/>
 <circle class="st0" cx="342.2" cy="159" r="21.6"/>
-		</symbol>
-		<symbol id="segment" viewBox="0 0 287.4 266.39">
-		<polygon class="cls-1" points="226.05 200.3 220.35 246.91 182.84 218.67 226.05 200.3" fill="#edf3f3" style="fill: var(--secondary-color)"/><path class="cls-2" d="M287.4,0A423.49,423.49,0,0,0,0,119L122.18,241.2A251.27,251.27,0,0,1,287.4,172.8Z" fill="#f6f8fa" style="fill: var(--primary-color)"/>
-		<path class="cls-1" d="M287.4,208.43V172.8a251.27,251.27,0,0,0-165.22,68.4l25.19,25.19A215.77,215.77,0,0,1,287.4,208.43Z" fill="#edf3f3" style="fill: var(--secondary-color)"/>
 		</symbol>
 	</svg>
 	<main class="account-wrapper">
@@ -104,61 +99,51 @@
 						</nav>
 					</div>
 				</header>
-				<div class="container account-main-content">
-					<h1 class="display-4 text-uppercase">Мой профиль</h1>
-					<div class="account-info">
-						<div class="account-image-wrapper">
-							<div class="account-image">
-								<img src="./img/account-img.png" alt="">
-								<label for="file" style="background-image: url(img/img-download.png)"><input type="file" id="file" name="file" multiple></label>
+				<div class="container account-chat-content">
+					<div class="chat-wrapper">
+						<div class="container">
+							<div class="chat-header">
+								<img src="./img/chat-person-img.png" alt="">
+								<div class="chat-person-info">
+									<p>Диетолог Анна</p>
+									<span>online</span>
+								</div>
 							</div>
-						</div>
-						<div class="account-data">
-							<p><span>Имя: </span>Ксения Николаевна Иванова</p>
-							<p><span>Программа: </span>Вегетерианская</p>
-							<p>
-								<span>Активна до: </span>29.12.2018
-								<a href="#" id="account-continue">Продлить</a>
-							</p>
-						</div>
-					</div>
-					<div class="account-action-wrapper">
-						<div class="row">
-							<div class="col">
-								<a href="" class="action-program-link"><img src="./img/program.jpg" alt="" class="img-fluid">
-								<span>
-									Программа питания
-								</span>
-								</a>
-							</div>
-							<div class="col">
-								<a href="" class="action-program-link"><img src="./img/training.jpg" alt="" class="img-fluid">
-								<span>
-									Программа питания
-								</span>
-								</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col nutritionist-wrapper" style="background-image: url(img/nutri-bg.jpg)">
-								<div class="photo-nutritionist-wrapper">
-										<div class="photo-nutritionist-wrapper">
-									<div class="photo-nutritionist-wrapper orange">
-										<img src="./img/nutritionist.png" alt="" id="nutritionist">
+							<div class="chat-body">
+								<div class="message-block message-block__responder">
+									<div class="message-block__info">
+										<span>Вы</span>
+										<span>11:55,</span>
+										<span>Сегодня</span>
+									</div>
+									<div class="message-block__text">
+										Можно заменить яблоко грушей во время перекуса?
 									</div>
 								</div>
-								</div>
-								<div class="nutritionist-say">
-									<p>Здраствуйте, я <span>Анна</span>, Ваш диетолог</p>
-								<a href="#" id="chat-link" class="text-uppercase">Перейти в чат</a>
+									<div class="message-block">
+									<div class="message-block__info">
+										<span>Диетолог Анна</span>
+										<span>12:01,</span>
+										<span>Сегодня</span>
+									</div>
+									<div class="message-block__text">
+										Да, можете.
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+						<div class="chat-footer">
+							<div class="container">
+								<form action="">
+									<textarea name="message" id="" cols="30" rows="5" placeholder="Напишите сообщение..."></textarea>
+									<button>Отправить</button>
+								</form>
+							</div>
+								
+							</div>
 				</div>
-				
 			</div>
-			
 		</div>
 		<div class="footer" style="background-image: url(img/bg-footer.jpg)">
 			<div class="container">
@@ -227,7 +212,6 @@
 			</div>
 		</div>
 	</main>
-	
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/libs.js"></script>
 </body>
