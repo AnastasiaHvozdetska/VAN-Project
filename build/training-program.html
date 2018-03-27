@@ -185,7 +185,7 @@
 																<use xlink:href="#play"></use>
 															</svg>
 														</div>
-														<div class="modal fade" id="video1" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" data-name="Some exercise1">
+														<div class="modal fade" id="video1" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" data-name="Some exercise1" data-count="1">
 															<div class="modal-dialog modal-dialog-centered" role="document">
 																<div class="modal-content">
 																	<button type="button" class="close close-video" data-dismiss="modal" aria-label="Close">
@@ -203,7 +203,7 @@
 																</div>
 															</div>
 														</div>
-														<div class="modal fade" id="video2" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" data-name="Some exercise2">
+														<div class="modal fade" id="video2" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" data-name="Some exercise2" data-count="2">
 															<div class="modal-dialog modal-dialog-centered" role="document">
 																<div class="modal-content">
 																	<button type="button" class="close close-video" data-dismiss="modal" aria-label="Close">
@@ -221,7 +221,7 @@
 																</div>
 															</div>
 														</div>
-														<div class="modal fade" id="video3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+														<div class="modal fade" id="video3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" data-name="Some exercise3" data-count="3">
 															<div class="modal-dialog modal-dialog-centered" role="document">
 																<div class="modal-content">
 																	<button type="button" class="close close-video" data-dismiss="modal" aria-label="Close">
@@ -239,7 +239,7 @@
 																</div>
 															</div>
 														</div>
-														<div class="modal fade" id="video4" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+														<div class="modal fade" id="video4" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" data-name="Some exercise4" data-count="4">
 															<div class="modal-dialog modal-dialog-centered" role="document">
 																<div class="modal-content">
 																	<button type="button" class="close close-video" data-dismiss="modal" aria-label="Close">
@@ -257,7 +257,7 @@
 																</div>
 															</div>
 														</div>
-														<div class="modal fade" id="video5" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+														<div class="modal fade" id="video5" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" data-name="Some exercise5" data-count="5">
 															<div class="modal-dialog modal-dialog-centered" role="document">
 																<div class="modal-content">
 																	<button type="button" class="close close-video" data-dismiss="modal" aria-label="Close">
@@ -499,17 +499,27 @@
 			var videoName = document.createElement('p');
 			var buttonPrev = document.createElement('button');
 			var buttonAfter = document.createElement('button');
+			var videoCount = document.createElement('span');
 			buttonPrev.classList.add('btnPrev');
 			buttonAfter.classList.add('btnAfter');
 			videoName.classList.add('video-name');
+			videoCount.classList.add('video-count');
 
 			$('.vjs-control-bar:not(:first)').prepend(buttonPrev);
 			$('.vjs-play-control').after(buttonAfter);
 			$('.btnAfter').after(videoName);
+			$('.btnAfter').after(videoCount);
 			$('.btnPrev').append('<img src="./svg/previous.svg" alt="" class="img-fluid">');
 			$('.btnAfter').append('<img src="./svg/next.svg" alt="" class="img-fluid">');
 		});
 
+		$(function() {
+			$('.video-count').each(function(index, element) {
+				var value = $(element).closest('.modal').attr('data-count');
+				$(element).html(value + " /5");
+			})
+		});
+		
 		$(function() {
 			$('.video-name').each(function(index, element) {
 				var value = $(element).closest('.modal').attr('data-name');
