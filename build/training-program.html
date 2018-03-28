@@ -111,7 +111,7 @@
 					</div>
 				</header>
 				<div class="container account-training-content">
-					<h3 class="text-uppercase">Рекомендованное меню</h3>
+					<h3 class="text-uppercase">Рекомендованная программа тренировок</h3>
 					<div class="tabbable">
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#tab1" data-toggle="tab" class="week active show">Неделя 1</a>
@@ -139,6 +139,19 @@
 										<div class="tab-content">
 											<div class="tab-pane active" id="tab5">
 												<div class="container">
+													<div class="program-video-info">
+														<h4 class="text-uppercase">5 упражнений</h4>
+														<div class="program-info">
+															<img src="./svg/wall-clock.svg" alt="">
+															<span>0ч 30мин</span>
+															<p>
+																<span>К</span> 1250
+															</p>
+														</div>
+														<button class="done">
+															Выполнено
+														</button>
+													</div>
 													<div class="video-wrapper">
 														<div href="#" class="video-link" data-toggle="modal" data-target="#video1">
 															<img src="./img/videoposter1.jpg" alt="" class="img-fluid">
@@ -519,7 +532,7 @@
 				$(element).html(value + " /5");
 			})
 		});
-		
+
 		$(function() {
 			$('.video-name').each(function(index, element) {
 				var value = $(element).closest('.modal').attr('data-name');
