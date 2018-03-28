@@ -3,12 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Order</title>
+	<title>Contacts</title>
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/slick-theme.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 </head>
 
@@ -39,7 +38,7 @@
 			c-1.7,3.1-1.2,7,1.4,9.5c0,0,0.1,0.1,0.1,0.1c3.8,3.8,10.2,2.9,12.7-1.8C336.7,282.3,340.3,267.2,339.4,251.2z"/>
 <circle class="st0" cx="342.2" cy="159" r="21.6"/>
 		</symbol>
-	</svg> 
+	</svg>
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-inverse navbar-expand-md">
@@ -125,132 +124,12 @@
 			</div>
 		</div>
 	</div>
-	<main class="order-content">
+	<main class="contacts-content">
 		<div class="container">
-			<h1 class="text-uppercase display-4">Ваш заказ</h1>
-			<div class="row order-price">
-				<div class="col order-name"> <img src="./img/cheese.png" alt="">
-					<h3 class="text-uppercase">Сбалансированное питание</h3>
-				</div>
-				<div class="col order-pay">
-					<p>Сумма к оплате:</p>
-					<p id="price">1000 <span>грн</span></p>
-				</div>
-			</div>
+			
 		</div>
-			<div class="form-content">
-				<form action="">
-				<div class="container">
-						<div class="form-info">
-						<div class="form-group">
-							<label for="name"></label>
-							<input type="text" id="name" placeholder="Введите имя и фамилию">
-						</div>
-						<div class="form-group">
-							<label for="name"></label>
-							<input type="email" id="email" placeholder="Введите e-mail">
-						</div>
-						<div class="form-group phone-number-wrapper">
-						<label for="country-code"></label> <select id="country-code" class="form-control" data-style="btn-primary"> 		<option>+38</option>
-							<option>+7</option>
-							<option>+375</option>
-						</select>
-							<label for="phone-number"></label>
-							<input type="text" id="phone-number">
-						</div>
-					</div>
-					<h3 class="display-4 text-uppercase text-center">Выберите удобный способ оплаты</h3>
-				</div>
-				
-					<div class="form-card">
-						<div class="checkbox" style="background-image: url(img/card.png)">
-							<label for="card"> Картой Viza / Mastercard</label>
-							<input type="radio" id="card" name="radio" class="type" value="card">
-						</div>
-						<div class="checkbox" style="background-image: url(img/cash.png)">
-							<label for="cash">Наличными (через кассу или терминал)</label>
-							<input type="radio" id="cash" name="radio" class="type" value="cash">
-						</div>
-					</div>
-					<a href="" class="btn-order">Заказать программу</a>
-				</form>
-			</div>
 	</main>
-	<div class="footer" style="background-image: url(img/bg-footer.jpg)">
-		<div class="container">
-			<div class="row">
-				<div class="col-2">
-					<a href="#" class="footer-logo_link"><img src="img/VAN_logo_white.png" alt="" class="img-fluid"></a>
-				</div>
-				<div class="col">
-					<h5 class="text-uppercase footer-title">
-						<img src="svg/phone.svg" alt="" class="img-fluid title-icon"> Контакты
-					</h5>
-					<div class="contact-content">
-						<a href="mailto:pp.school.van@gmail.com" class="footer-mail contact">pp.school.van@gmail.com</a>
-						<a href="tel:+380636286454" class="footer-phone contact">+38 (063) 628 64 54</a>
-						<p>Присоединяйтесь к нам</p>
-						<div class="social">
-							<a href="#" class="social-link">
-									<svg class="facebook social-icon">
-										<use xlink:href="#facebook"></use>
-									</svg>
-								</a>
-							<a href="#" class="social-link">
-									<svg class="instagram social-icon">
-										<use xlink:href="#instagram"></use>
-									</svg>
-								</a>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<h5 class="text-uppercase footer-title">
-						<img src="svg/help.svg" alt="" class="img-fluid title-icon"> Вопросы-ответы
-					</h5>
-					<div class="question-content">
-						<p>Можно ли тренироваться, если есть ограничения по здоровью?</p>
-						<p>Можно ли тренироваться, если есть ограничения по здоровью?</p>
-						<p>Можно ли тренироваться, если есть ограничения по здоровью?</p>
-					</div>
-	
-				</div>
-				<div class="col">
-					<h5 class="text-uppercase footer-title">
-						<img src="svg/email.svg" alt="" class="img-fluid title-icon"> Напишите нам
-					</h5>
-					<div class="form-content">
-						<form action="pp.school.van@gmail.com">
-							<div class="form-group">
-								<label for="last_name" class="sr-only">Имя</label>
-								<input type="text" class="form-control" name="last_name" id="last_name" placeholder="Имя">
-							</div>
-							<div class="form-group">
-								<label for="email-input" class="sr-only">E-mail</label>
-								<input type="email" class="form-control" id="email-input" placeholder="E-mail">
-							</div>
-							<div class="form-group" id="area-message">
-								<label for="message"></label>
-								<textarea name="message" id="message" rows="4" class="form-control" placeholder="Сообщение"></textarea>
-							</div>
-							<div class="form-group text-center">
-								<button type="submit" class="btn btn-send text-uppercase">Отправить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/libs.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-	
-	<script>
-	$('#phone-number').mask('(999) 999-9999', {
-		placeholder: "_"
-	});
-	</script>
 </body>
-
 </html>
