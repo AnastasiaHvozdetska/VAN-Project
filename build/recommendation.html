@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Statistics</title>
+	<title>Recommendation</title>
 
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -100,95 +100,29 @@
 						</nav>
 					</div>
 				</header>
-				<div class="container account-statistics-content">
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col" class="table-column-header column-1"></th>
-								<th scope="col" class="table-column-header column-2">Текущий</th>
-								<th scope="col" class="table-column-header column-3">По окончанию тренировки</th>
-								<th scope="col" class="table-column-header column-4">Результат</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row" class="column-1">Вес</th>
-								<td class="column-2">
-									<input type="number" class="type-number" disabled placeholder="кг" id="result1">
-									<button class="btn-plus">+</button>
-								</td>
-								<td class="column-3">
-									<input type="number" class="type-number" disabled id="result2">
-										<button class="btn-plus">+</button>
-									</td>
-								<td class="column-4">
-									<div class="result-number result-number__bad">
-										<span>0</span>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row" class="column-1">Талия</th>
-								<td class="column-2">
-									<input type="number" class="type-number" disabled value="" id="result3">
-									<button class="btn-plus">+</button>
-								</td>
-								<td class="column-3">
-									<input type="number" class="type-number" disabled id="result4">
-									<button class="btn-plus">+</button>
-								</td>
-								<td class="column-4">
-									<div class="result-number result-number__good">
-										
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row" class="column-1">Обхват груди</th>
-								<td class="column-2">
-									<input type="number" class="type-number" disabled id="result5">
-									<button class="btn-plus">+</button>
-								</td>
-								<td class="column-3">
-									<input type="number" class="type-number" disabled id="result6">
-									<button class="btn-plus">+</button>
-								</td>
-								<td class="column-4">
-									<div class="result-number result-number__bad">
-										
-									</div>
-								</td>
-							</tr>
-								<tr>
-								<th scope="row" class="column-1">Обхват бедер</th>
-								<td class="column-2">
-									<input type="number" class="type-number" disabled id="result7"> 
-									<button class="btn-plus">+</button>
-								</td>
-								<td class="column-3">
-									<input type="number" class="type-number" disabled id="result8">
-									<button class="btn-plus">+</button>
-								</td>
-								<td class="column-4">
-									<div class="result-number result-number__bad">
-										
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<p>
-						Выполнено тренировок:
-						<span>46</span>
-					</p>
-					<p>
-						Выполнено упражнений:
-						<span>120</span>
-					</p>
-					<p>
-						Употреблено:
-						<span>120</span>
-					</p>
+				<div class="container account-recommendation-content">
+					<ol>
+						<li>
+							<h4>Фотографируйте себя</h4>
+							<p>Еженедельно фотографируйте себя и сравнивайте с фотографиями прошедших недель — так легко визуализировать трансформации, происходящие в вашем теле благодаря ежедневному внимательному к нему отношению.</p>
+						</li>
+						<li>
+							<h4>Найдите способ улучшить себе настроение</h4>
+							<p>Когда скука, депрессия или стресс вызывают тягу съесть "что-нибудь вкусное", найдите другой способ улучшить себе настроение. Сходите на прогулку, пообщайтесь с друзьями, примите ванну, почитайте книгу, займитесь йогой.</p>
+						</li>
+						<li>
+							<h4>Бутылка с водой</h4>
+							<p>Держите на столе бутылку с водой и регулярно делайте несколько глотков. Так чувство голода притупится. Кроме того, берите с собой еду из дома, заранее планируя свой рацион. Пусть это будет только здоровая пища.</p>
+						</li>
+						<li>
+							<h4>Одежда</h4>
+							<p>Не носите мешковатую одежду, которая скрывает контуры тела. Даже когда вы отдыхаете дома, носите обтягивающую одежду, чтобы не дать себе расслабиться.</p>
+						</li>
+						<li>
+							<h4>Выбросите все</h4>
+							<p>Выбросите все вредные снеки из шкафов вашей кухни и просто больше никогда их не покупайте. Никаких чипсов, печенья, конфет, сухариков, сладкой газировки. Уберегите себя от легкодоступного соблазна.</p>
+						</li>
+					</ol>
 				</div>
 			</div>
 		</div>
@@ -261,18 +195,6 @@
 	</main>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/libs.js"></script>
-	
-	<script>
-		$('.btn-plus').on('click', function(){
-			$(this).hide();
-			$(this).parents("td").find('.type-number').prop('disabled', false);
-			$(this).parents("td").find('.type-number').focus();
-		});
-		
-		$('.type-number').change(function(){
-				var value = $(this).val();
-			});	
-	</script>
 </body>
 
 </html>
