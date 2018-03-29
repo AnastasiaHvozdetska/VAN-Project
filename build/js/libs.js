@@ -33,10 +33,6 @@ $(document).ready(function () {
 		$('label').css('color', '#fff');
 		$(this).find('label').css('color', '#303030');
 	});
-
-//	$('.case').on('click', function () {
-//		$(this).parent().next('.btn-group-step').show();
-//	});
 	
 	$(function(){
 		var heightMenu = $('.account-content').height();
@@ -47,7 +43,7 @@ $(document).ready(function () {
 		var url = document.location.toString();
 		$('.left-menu-link').filter(function(){
 			return url.indexOf(this.href) != -1;
-		}).addClass('.current-link');
+		}).addClass('current-link');
 	});
 });
 
