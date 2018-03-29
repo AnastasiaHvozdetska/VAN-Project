@@ -78,7 +78,7 @@
 										<a href="news.html" class="nav-link menu-link text-uppercase">Новости</a>
 									</li>
 									<li class="nav-item">
-										<a href="#" class="nav-link menu-link text-uppercase">Контакты</a>
+										<a href="contacts.html" class="nav-link menu-link text-uppercase">Контакты</a>
 									</li>
 									<li class="nav-item">
 										<a href="#" class="nav-link social-link">
@@ -121,7 +121,7 @@
 										Можно заменить яблоко грушей во время перекуса?
 									</div>
 								</div>
-								<div class="message-block">
+									<div class="message-block">
 									<div class="message-block__info">
 										<span>Диетолог Анна</span>
 										<span>12:01,</span>
@@ -131,7 +131,7 @@
 										Да, можете.
 									</div>
 								</div>
-								<div class="message-block message-block__responder">
+									<div class="message-block message-block__responder">
 									<div class="message-block__info">
 										<span>Вы</span>
 										<span>11:55,</span>
@@ -154,15 +154,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="chat-footer">
-						<div class="container">
-							<form action="">
-								<textarea name="message" id="" cols="30" rows="5" placeholder="Напишите сообщение..."></textarea>
-								<button>Отправить</button>
-							</form>
-						</div>
-
-					</div>
+						<div class="chat-footer">
+							<div class="container">
+								<form action="">
+									<textarea name="message" id="" cols="30" rows="5" placeholder="Напишите сообщение..."></textarea>
+									<button>Отправить</button>
+								</form>
+							</div>
+								
+							</div>
 				</div>
 			</div>
 		</div>
@@ -235,14 +235,13 @@
 	</main>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/libs.js"></script>
-
-	<script>
-		$('textarea').on('keydown', function(e) {
-			if (e.keyCode === 13) {
-				e.preventDefault();
-			}
-		});
-
+	
+		<script>
+		$('textarea').on('keydown', function( e ) {
+	  if( e.keyCode === 13 ) {
+		e.preventDefault();
+	  }
+	});
 	</script>
 </body>
 

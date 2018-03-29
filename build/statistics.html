@@ -79,7 +79,7 @@
 										<a href="news.html" class="nav-link menu-link text-uppercase">Новости</a>
 									</li>
 									<li class="nav-item">
-										<a href="#" class="nav-link menu-link text-uppercase">Контакты</a>
+										<a href="contacts.html" class="nav-link menu-link text-uppercase">Контакты</a>
 									</li>
 									<li class="nav-item">
 										<a href="#" class="nav-link social-link">
@@ -114,64 +114,69 @@
 							<tr>
 								<th scope="row" class="column-1">Вес</th>
 								<td class="column-2">
-									<input type="number" class="type-number" disabled placeholder="кг" id="result1">
+									<input type="number" class="type-number" disabled data-pos="1">
 									<button class="btn-plus">+</button>
 								</td>
 								<td class="column-3">
-									<input type="number" class="type-number" disabled id="result2">
+									<input type="number" class="type-number" disabled data-pos="2">
 										<button class="btn-plus">+</button>
 									</td>
 								<td class="column-4">
 									<div class="result-number result-number__bad">
-										<span>0</span>
+										<span class="result-value">0</span>
+										<span class="result-measure">кг</span>
 									</div>
+									
 								</td>
 							</tr>
 							<tr>
 								<th scope="row" class="column-1">Талия</th>
 								<td class="column-2">
-									<input type="number" class="type-number" disabled value="" id="result3">
+									<input type="number" class="type-number" disabled value="" data-pos="1">
 									<button class="btn-plus">+</button>
 								</td>
 								<td class="column-3">
-									<input type="number" class="type-number" disabled id="result4">
+									<input type="number" class="type-number" disabled data-pos="2">
 									<button class="btn-plus">+</button>
 								</td>
 								<td class="column-4">
-									<div class="result-number result-number__good">
-										
+									<div class="result-number result-number__bad">
+										<span class="result-value">0</span>
+										<span class="result-measure">см</span>
 									</div>
 								</td>
 							</tr>
 							<tr>
 								<th scope="row" class="column-1">Обхват груди</th>
 								<td class="column-2">
-									<input type="number" class="type-number" disabled id="result5">
+									<input type="number" class="type-number" disabled data-pos="1">
 									<button class="btn-plus">+</button>
 								</td>
 								<td class="column-3">
-									<input type="number" class="type-number" disabled id="result6">
+									<input type="number" class="type-number" disabled data-pos="2">
 									<button class="btn-plus">+</button>
 								</td>
 								<td class="column-4">
 									<div class="result-number result-number__bad">
-										
+										<span class="result-value">0</span>
+										<span class="result-measure">см</span>
 									</div>
 								</td>
 							</tr>
 								<tr>
 								<th scope="row" class="column-1">Обхват бедер</th>
 								<td class="column-2">
-									<input type="number" class="type-number" disabled id="result7"> 
+									<input type="number" class="type-number" disabled data-pos="1"> 
 									<button class="btn-plus">+</button>
 								</td>
 								<td class="column-3">
-									<input type="number" class="type-number" disabled id="result8">
+									<input type="number" class="type-number" disabled data-pos="2">
 									<button class="btn-plus">+</button>
 								</td>
 								<td class="column-4">
 									<div class="result-number result-number__bad">
-										
+										<span class="result-value">0</span>
+										<span class="result-measure">см</span>
 									</div>
 								</td>
 							</tr>
@@ -185,9 +190,14 @@
 						Выполнено упражнений:
 						<span>120</span>
 					</p>
-					<p>
+					<p class="used">
 						Употреблено:
-						<span>120</span>
+						<span>Углеводы</span>
+						<span>150/150г</span>
+						<span>Белки</span>
+						<span>77/77</span>
+						<span>Жиры</span>
+						<span>80/120</span>
 					</p>
 				</div>
 			</div>
@@ -270,7 +280,17 @@
 		});
 		
 		$('.type-number').change(function(){
-				var value = $(this).val();
+				var difference = +$(this).closest('tr').find('input[data-pos="1"]').val()-(+$(this).closest('tr').find('input[data-pos="2"]').val());
+				var result = $(this).closest('tr').find('.result-value');
+				result.empty();
+				result.append(difference);
+				if (difference <= 0) {
+					result.parent().removeClass();
+					result.parent().addClass('result-number result-number__bad');
+				} else {
+					result.parent().removeClass();
+					result.parent().addClass('result-number result-number__good');
+				}
 			});	
 	</script>
 </body>

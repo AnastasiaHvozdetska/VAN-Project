@@ -131,12 +131,19 @@
 				Контакты
 			</h2>
 			<div class="contacts-data">
-				<a href="mailto:pp.school.van@gmail.com" class="footer-mail contact">pp.school.van@gmail.com</a>
-				<a href="tel:+380636286454" class="footer-phone contact">+38 (063) 628 64 54</a>
+				<div class="contacts-data-item">
+					<img src="./svg/main-contacts.svg" alt="">
+					<a href="mailto:pp.school.van@gmail.com" class="contacts-mail contact">pp.school.van@gmail.com</a>
+				</div>
+				<div class="contacts-data-item">
+					<img src="./svg/phone-contacts.svg" alt="">
+					<a href="tel:+380636286454" class="contacts-phone contact">+38 (063) 628 64 54</a>
+				</div>
 			</div>
 		</div>
-			<form action="">
-				<div class="container">
+			<div class="contacts-form-wrapper container">
+				<h2 class="text-uppercase">У вас возникли вопросы?<br>Напишите нам</h2>
+					<form action="">
 					<div class="form-info">
 						<div class="form-group">
 							<label for="name"></label>
@@ -148,16 +155,83 @@
 						</div>
 						<div class="form-group phone-number-wrapper">
 							<label for="contact-text"></label>
-							<textarea name="text" id="contact-text" cols="30" rows="1" placeholder="Сообщение"></textarea>
+							<textarea name="text" id="contact-text" cols="30" rows="2" placeholder="Сообщение"></textarea>
 						</div>
 						<button class="btn-order">Отправить</button>
 					</div>
-				</div>
 			</form>
+			</div>	
 		</div>
 	</main>
+	<div class="footer" style="background-image: url(img/bg-footer.jpg)">
+		<div class="container">
+			<div class="row">
+				<div class="col-2">
+					<a href="#" class="footer-logo_link"><img src="img/VAN_logo_white.png" alt="" class="img-fluid"></a>
+				</div>
+				<div class="col">
+					<h5 class="text-uppercase footer-title">
+						<img src="svg/phone.svg" alt="" class="img-fluid title-icon"> Контакты
+					</h5>
+					<div class="contact-content">
+						<a href="mailto:pp.school.van@gmail.com" class="footer-mail contact">pp.school.van@gmail.com</a>
+						<a href="tel:+380636286454" class="footer-phone contact">+38 (063) 628 64 54</a>
+						<p>Присоединяйтесь к нам</p>
+						<div class="social">
+							<a href="#" class="social-link">
+									<svg class="facebook social-icon">
+										<use xlink:href="#facebook"></use>
+									</svg>
+								</a>
+							<a href="#" class="social-link">
+									<svg class="instagram social-icon">
+										<use xlink:href="#instagram"></use>
+									</svg>
+								</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<h5 class="text-uppercase footer-title">
+						<img src="svg/help.svg" alt="" class="img-fluid title-icon"> Вопросы-ответы
+					</h5>
+					<div class="question-content">
+						<p>Можно ли тренироваться, если есть ограничения по здоровью?</p>
+						<p>Можно ли тренироваться, если есть ограничения по здоровью?</p>
+						<p>Можно ли тренироваться, если есть ограничения по здоровью?</p>
+					</div>
+	
+				</div>
+				<div class="col">
+					<h5 class="text-uppercase footer-title">
+						<img src="svg/email.svg" alt="" class="img-fluid title-icon"> Напишите нам
+					</h5>
+					<div class="form-content">
+						<form action="pp.school.van@gmail.com">
+							<div class="form-group">
+								<label for="last_name" class="sr-only">Имя</label>
+								<input type="text" class="form-control" name="last_name" id="last_name" placeholder="Имя">
+							</div>
+							<div class="form-group">
+								<label for="email-input" class="sr-only">E-mail</label>
+								<input type="email" class="form-control" id="email-input" placeholder="E-mail">
+							</div>
+							<div class="form-group" id="area-message">
+								<label for="message"></label>
+								<textarea name="message" id="message" rows="4" class="form-control" placeholder="Сообщение"></textarea>
+							</div>
+							<div class="form-group text-center">
+								<button type="submit" class="btn btn-send text-uppercase">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/libs.js"></script>
+	
 </body>
 
 </html>
