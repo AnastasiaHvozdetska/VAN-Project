@@ -282,7 +282,7 @@
 				var difference = +$(this).closest('tr').find('input[data-pos="1"]').val()-(+$(this).closest('tr').find('input[data-pos="2"]').val());
 				var result = $(this).closest('tr').find('.result-value');
 				result.empty();
-				result.append(difference);
+				
 				if (difference <= 0) {
 					result.parent().removeClass();
 					result.parent().addClass('result-number result-number__bad');
@@ -290,6 +290,7 @@
 					result.parent().removeClass();
 					result.parent().addClass('result-number result-number__good');
 				}
+				result.append(Math.abs(difference));
 			});	
 	</script>
 </body>
