@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
 
 </head>
@@ -45,9 +46,9 @@
 		</symbol>
 	</svg>
 	<main class="account-wrapper">
-		<aside class="left-menu-wrapper">
+		<aside class="left-menu-wrapper collapse in">
 			<a class="navbar-brand" href="index.html"><img src="img/VAN_logo_white.png" alt="logo" class="img-fluid"></a>
-			<nav class="nav flex-column">
+			<nav class="nav collapse navbar-collapse  flex-column">
 				<a class="nav-link left-menu-link" href="account.html">Главная</a>
 				<a class="nav-link left-menu-link" href="account-program.html">Программа питания</a>
 				<a class="nav-link left-menu-link" href="training-program.html">Программа тренировок</a>
@@ -61,10 +62,13 @@
 			<div class="container">
 				<header>
 					<div class="container">
-						<nav class="navbar navbar-inverse navbar-expand-md">
-							<button class="navbar-toggler pull-md-left" type="button" data-toggle="collapse" data-target="#navbar-menu">
+						<nav class="navbar  navbar-expand-md">
+							<button class="navbar-toggler pull-md-right" type="button" id="left-menu-button">
 				   					<span class="navbar-toggler-icon"></span>
-				 				</button>
+				 			</button>
+							<button class="navbar-toggler pull-md-right" type="button" data-toggle="collapse" data-target="#navbar-menu">
+				   					<span class="navbar-toggler-icon"></span>
+				 			</button>
 							<div class="collapse navbar-collapse" id="navbar-menu">
 								<ul class="navbar-nav mr-auto">
 									<li class="nav-item">
@@ -162,11 +166,11 @@
 		</div>
 		<div class="footer" style="background-image: url(img/bg-footer.jpg)">
 			<div class="container">
-				<div class="row">
-					<div class="col-2">
+				<div class="row container">
+					<div class="col-2 footer-logo-wrapper">
 						<a href="#" class="footer-logo_link"><img src="img/VAN_logo_white.png" alt="" class="img-fluid"></a>
 					</div>
-					<div class="col">
+					<div class="col footer-title-wrapper">
 						<h5 class="text-uppercase footer-title">
 							<img src="svg/phone.svg" alt="" class="img-fluid title-icon"> Контакты
 						</h5>
@@ -188,7 +192,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col footer-questions-wrapper">
 						<h5 class="text-uppercase footer-title">
 							<img src="svg/help.svg" alt="" class="img-fluid title-icon"> Вопросы-ответы
 						</h5>
@@ -199,7 +203,7 @@
 						</div>
 		
 					</div>
-					<div class="col">
+					<div class="col footer-form-wrapper">
 						<h5 class="text-uppercase footer-title">
 							<img src="svg/email.svg" alt="" class="img-fluid title-icon"> Напишите нам
 						</h5>
