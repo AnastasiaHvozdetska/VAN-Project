@@ -45,8 +45,14 @@
 		</symbol>
 	</svg>
 	<main class="account-wrapper">
-		<aside class="left-menu-wrapper collapse in">
+		<aside class="left-menu-wrapper">
 			<a class="navbar-brand" href="index.html"><img src="img/VAN_logo_white.png" alt="logo" class="img-fluid"></a>
+			<button type="button" class="close-left-menu" data-dismiss="modal" aria-label="Close">
+		        <span aria-hidden="true">&times;</span>
+		    </button>
+		    <button class="navbar-toggler" type="button" id="left-menu-button">
+		   		<span class="navbar-toggler-icon"></span>
+		 	</button>
 			<nav class="nav collapse navbar-collapse  flex-column">
 				<a class="nav-link left-menu-link" href="account.html">Главная</a>
 				<a class="nav-link left-menu-link" href="account-program.html">Программа питания</a>
@@ -61,11 +67,9 @@
 			<div class="container">
 				<header>
 					<div class="container">
-						<nav class="navbar  navbar-expand-md">
-							<button class="navbar-toggler pull-md-right" type="button" id="left-menu-button">
-				   					<span class="navbar-toggler-icon"></span>
-				 			</button>
-							<button class="navbar-toggler pull-md-right" type="button" data-toggle="collapse" data-target="#navbar-menu">
+						<nav class="navbar  navbar-expand-lg">
+							
+							<button class="navbar-toggler pull-lg-right" type="button" data-toggle="collapse" data-target="#navbar-menu">
 				   					<span class="navbar-toggler-icon"></span>
 				 			</button>
 							<div class="collapse navbar-collapse" id="navbar-menu">
@@ -149,15 +153,15 @@
 																</p>
 															</div>
 															<div class="row">
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="receipt.html" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/carrot-juice.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
@@ -178,15 +182,15 @@
 																</p>
 															</div>
 															<div class="row">
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/carrot-juice.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
@@ -207,15 +211,15 @@
 																</p>
 															</div>
 															<div class="row">
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/carrot-juice.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
@@ -236,15 +240,15 @@
 																</p>
 															</div>
 															<div class="row">
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/carrot-juice.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
@@ -265,15 +269,15 @@
 																</p>
 															</div>
 															<div class="row">
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/carrot-juice.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
-																<div class="col-6 food-wrapper">
+																<div class="col-xs-12 food-wrapper">
 																	<img src="./img/pancakes.png" alt="">
 																	<a href="#" class="food-name">Овсяные оладьи</a>
 																</div>
@@ -424,6 +428,23 @@
 				</div>
 			</div>
 		</div>
+		<div class="modal fade gratitude-modal" id="order-gratitude-modal" tabindex="-1" role="dialog" aria-labelledby="gratitude" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+				<div class="modal-body gratitude-modal-body">
+					<div class="row">
+						<div class="col gratitude-containt container" style="background-image: url(img/gratitude-bg.jpg)">
+							<h5 class="modal-title text-uppercase" id="gratitude">Спасибо!</h5>
+							<p>Наши сотрудники свяжутся с вами<br> в ближайшее время</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 		<div class="footer" style="background-image: url(img/bg-footer.jpg)">
 			<div class="container">
 				<div class="row container">

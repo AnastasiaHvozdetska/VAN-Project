@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
 </head>
 
@@ -41,8 +42,14 @@
 		</symbol>
 	</svg>
 	<main class="account-wrapper">
-		<aside class="left-menu-wrapper collapse in">
+		<aside class="left-menu-wrapper">
 			<a class="navbar-brand" href="index.html"><img src="img/VAN_logo_white.png" alt="logo" class="img-fluid"></a>
+			<button type="button" class="close-left-menu" data-dismiss="modal" aria-label="Close">
+		        <span aria-hidden="true">&times;</span>
+		    </button>
+		    <button class="navbar-toggler" type="button" id="left-menu-button">
+		   		<span class="navbar-toggler-icon"></span>
+		 	</button>
 			<nav class="nav collapse navbar-collapse  flex-column">
 				<a class="nav-link left-menu-link" href="account.html">Главная</a>
 				<a class="nav-link left-menu-link" href="account-program.html">Программа питания</a>
@@ -57,11 +64,9 @@
 			<div class="container">
 				<header>
 					<div class="container">
-						<nav class="navbar  navbar-expand-md">
-							<button class="navbar-toggler pull-md-right" type="button" id="left-menu-button">
-				   					<span class="navbar-toggler-icon"></span>
-				 			</button>
-							<button class="navbar-toggler pull-md-right" type="button" data-toggle="collapse" data-target="#navbar-menu">
+						<nav class="navbar  navbar-expand-lg">
+							
+							<button class="navbar-toggler pull-lg-right" type="button" data-toggle="collapse" data-target="#navbar-menu">
 				   					<span class="navbar-toggler-icon"></span>
 				 			</button>
 							<div class="collapse navbar-collapse" id="navbar-menu">

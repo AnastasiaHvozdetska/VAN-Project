@@ -54,7 +54,18 @@ $('.slider').slick({
 	});
 	$(function(){
 		$('#left-menu-button').on('click', function(){
-			$('.left-menu-wrapper').css('display', 'block');
+			$('.left-menu-wrapper').animate({
+				left: '0px'
+			}, 200);
+			$('#left-menu-button').animate({
+					left: '0px'
+			}, 200);
+			});
+		});
+		$('.close-left-menu').on('click', function(){
+			$('.left-menu-wrapper').animate({
+				left: '-65%'
+			}, 200);
 		});
 	});
 });
