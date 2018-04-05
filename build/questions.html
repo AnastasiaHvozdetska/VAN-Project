@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<title>Contacts</title>
+	<title>Questions</title>
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
 	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+	
 		<symbol id="facebook" viewBox="0 0 512 512">
 			<path class="st0" d="M437,75C388.7,26.6,324.4,0,256,0c-68,0-133,26.9-181,75C26.6,123.3,0,187.6,0,256
 			c0,53.3,16.2,104.4,46.9,147.8c30,42.4,71.5,74.3,120,92.3c3.3,1.2,7,0.2,9.3-2.7c1.1-1.5,1.6-3.3,1.6-5.1v-146
@@ -39,6 +37,10 @@
 			c-37.5-0.4-67.7-31.8-66.6-69.3c1.1-37.7,33.2-67.7,71.7-65.3c33.1,2.1,60.1,28.5,62.8,61.6c1.1,13.5-1.8,26.2-7.6,37.2
 			c-1.7,3.1-1.2,7,1.4,9.5c0,0,0.1,0.1,0.1,0.1c3.8,3.8,10.2,2.9,12.7-1.8C336.7,282.3,340.3,267.2,339.4,251.2z"/>
 <circle class="st0" cx="342.2" cy="159" r="21.6"/>
+		</symbol>
+		<symbol id="segment" viewBox="0 0 287.4 266.39">
+		<polygon class="cls-1" points="226.05 200.3 220.35 246.91 182.84 218.67 226.05 200.3" fill="#edf3f3" style="fill: var(--secondary-color)"/><path class="cls-2" d="M287.4,0A423.49,423.49,0,0,0,0,119L122.18,241.2A251.27,251.27,0,0,1,287.4,172.8Z" fill="#f6f8fa" style="fill: var(--primary-color)"/>
+		<path class="cls-1" d="M287.4,208.43V172.8a251.27,251.27,0,0,0-165.22,68.4l25.19,25.19A215.77,215.77,0,0,1,287.4,208.43Z" fill="#edf3f3" style="fill: var(--secondary-color)"/>
 		</symbol>
 	</svg>
 	<header>
@@ -126,114 +128,5 @@
 			</div>
 		</div>
 	</div>
-	<main class="contacts-content">
-		<div class="container">
-		<div class="contacts-data-wrapper container">
-			<h2 class="text-uppercase">
-				Контакты
-			</h2>
-			<div class="contacts-data">
-				<div class="contacts-data-item">
-					<img src="./svg/main-contacts.svg" alt="">
-					<a href="mailto:pp.school.van@gmail.com" class="contacts-mail contact">pp.school.van@gmail.com</a>
-				</div>
-				<div class="contacts-data-item">
-					<img src="./svg/phone-contacts.svg" alt="">
-					<a href="tel:+380636286454" class="contacts-phone contact">+38 (063) 628 64 54</a>
-				</div>
-			</div>
-		</div>
-			<div class="contacts-form-wrapper container">
-				<h2 class="text-uppercase">У вас возникли вопросы?<br>Напишите нам</h2>
-					<form action="">
-					<div class="form-info">
-						<div class="form-group">
-							<label for="name"></label>
-							<input type="text" id="name" placeholder="Введите имя и фамилию">
-						</div>
-						<div class="form-group">
-							<label for="name"></label>
-							<input type="email" id="email" placeholder="Введите e-mail">
-						</div>
-						<div class="form-group phone-number-wrapper">
-							<label for="contact-text"></label>
-							<textarea name="text" id="contact-text" cols="30" rows="2" placeholder="Сообщение"></textarea>
-						</div>
-						<button class="btn-order">Отправить</button>
-					</div>
-			</form>
-			</div>	
-		</div>
-	</main>
-	<div class="footer" style="background-image: url(img/bg-footer.jpg)">
-		<div class="container">
-			<div class="row container">
-				<div class="col-2 footer-logo-wrapper">
-					<a href="#" class="footer-logo_link"><img src="img/VAN_logo_white.png" alt="" class="img-fluid"></a>
-				</div>
-				<div class="col footer-title-wrapper">
-					<h5 class="text-uppercase footer-title">
-						<img src="svg/phone.svg" alt="" class="img-fluid title-icon"> Контакты
-					</h5>
-					<div class="contact-content">
-						<a href="mailto:pp.school.van@gmail.com" class="footer-mail contact">pp.school.van@gmail.com</a>
-						<a href="tel:+380636286454" class="footer-phone contact">+38 (063) 628 64 54</a>
-						<p>Присоединяйтесь к нам</p>
-						<div class="social">
-							<a href="#" class="social-link">
-									<svg class="facebook social-icon">
-										<use xlink:href="#facebook"></use>
-									</svg>
-								</a>
-							<a href="#" class="social-link">
-									<svg class="instagram social-icon">
-										<use xlink:href="#instagram"></use>
-									</svg>
-								</a>
-						</div>
-					</div>
-				</div>
-				<div class="col footer-questions-wrapper">
-					<h5 class="text-uppercase footer-title">
-						<img src="svg/help.svg" alt="" class="img-fluid title-icon"> Вопросы-ответы
-					</h5>
-					<div class="question-content">
-						<a href="questions.html">Можно ли тренироваться, если есть ограничения по здоровью?</a>
-						<a href="questions.html">Можно ли тренироваться, если есть ограничения по здоровью?</a>
-						<a href="questions.html">Можно ли тренироваться, если есть ограничения по здоровью?</a>
-					</div>
-	
-				</div>
-				<div class="col footer-form-wrapper">
-					<h5 class="text-uppercase footer-title">
-						<img src="svg/email.svg" alt="" class="img-fluid title-icon"> Напишите нам
-					</h5>
-					<div class="form-content">
-						<form action="pp.school.van@gmail.com">
-							<div class="form-group">
-								<label for="last_name" class="sr-only">Имя</label>
-								<input type="text" class="form-control" name="last_name" id="last_name" placeholder="Имя">
-							</div>
-							<div class="form-group">
-								<label for="email-input" class="sr-only">E-mail</label>
-								<input type="email" class="form-control" id="email-input" placeholder="E-mail">
-							</div>
-							<div class="form-group" id="area-message">
-								<label for="message"></label>
-								<textarea name="message" id="message" rows="4" class="form-control" placeholder="Сообщение"></textarea>
-							</div>
-							<div class="form-group text-center">
-								<button type="submit" class="btn btn-send text-uppercase">Отправить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/libs.js"></script>
-	
 </body>
-
 </html>
